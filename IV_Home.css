@@ -1,0 +1,611 @@
+body{
+	background-color: #6f6c6c;
+}
+
+a:link{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+a:hover{
+	cursor: pointer;
+	color: #6a6a6a;
+}
+
+#nav_bar{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 50px;
+	background-color: #202020;
+	text-align: center;
+	z-index: 2;
+}
+
+.navMenu{
+	margin: auto;
+	background-color: transparent;
+	display: inline-block;
+}
+
+.navMenu li{
+	position: relative;
+	float: left;
+	list-style: none;
+	/*display: inline-block;*/
+	padding: 17px 10px 17px 10px;
+	margin: 0;
+	/*position: relative;
+	height: 20px;
+	padding: 15px 20px 15px 20px;
+	margin: 0;
+	border-width: 0;*/
+	background-color: transparent;
+	/*text-align: left;*/
+	/*margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 15px;*/
+}
+
+.navMenu li a:link, .navMenu link a::visited{
+}
+
+.navMenu li ul{
+	width: 120px;
+	position: absolute;
+	margin: 17px 0 0 0;
+	padding: 0 0 0 0;
+	visibility: hidden;
+	text-align: left;
+	left: 0;
+}
+
+.navMenu li ul li{
+	/*display: block;*/
+	width: 100%;
+	margin: 0;
+	display: block;
+	/*padding: 10px 10px 10px 10px;*/
+	background-color: #afacac;
+}
+
+.navMenu li ul li a:link, .navMenu li ul li a:visited{
+	
+}
+
+.navMenu li ul li ul{
+	position: absolute;
+	display: inline-block;
+	visibility: hidden;
+	left: 100%;
+	top: -234%;
+}
+
+.menuText{
+	color: #ffffff;
+
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 100%;
+	font-weight: 400;
+	letter-spacing: normal;
+
+	cursor: pointer;
+}
+
+.menuText:hover{
+	/*background-color: #6a6a6a;*/
+	color: #6a6a6a;
+}
+
+table{
+	margin: 200px auto auto;
+}
+
+td{
+	padding: 20px;
+}
+
+#logo{
+	position: relative;
+	width: 250px;
+	height: 150px;
+	/*margin: 200px auto auto;*/
+
+	/*border: 5px solid #f450f3;*/
+}
+
+#one{
+	position: absolute;
+	width: 48%;
+	height: 100%;
+
+	/*border: 3px dotted #000c89;*/
+}
+
+#five{
+	position: absolute;
+	right: 0;
+	width: 48%;
+	height: 100%;
+
+/*	border: 3px dotted #000c89;*/
+}
+
+.IV{
+	position: relative;
+	background-color: #ffffff;
+	padding: 0;
+}
+
+.Top, .Bottom{
+	float: left;
+	height: 20%;
+}
+
+.Top{
+	top: 0;
+}
+
+.Bottom{
+	bottom: 0;
+}
+
+.iLeft, .iRight{
+	width: 35%;
+}
+
+.iLeft{
+	border-radius: 5px 0 0 5px;
+}
+
+.iRight{
+	border-radius: 0 5px 5px 0;
+}
+
+.iMiddle{
+	width: 30%;
+}
+
+#middle{
+	height: 60%;
+	margin: auto;
+
+	clear: both;
+}
+
+.vLeft, .vRight{
+	width: 30%;
+	height: 100%;
+	border-radius: 5px;
+	transform-origin: 100% 0%;
+}
+
+.vLeft{
+	transform: skewX(15deg);
+	float: left;
+}
+
+.vRight{
+	transform: skewX(-15deg);
+	float: right;
+}
+
+/*****************************Logo #2*****************************/
+
+.IV2{
+	position: absolute;
+	background-color: #ffffff;
+	padding: 0;
+	border-radius: 5px;
+}
+
+.Top2, .Bottom2, .Middle2{
+	/*border-radius: 10%;*/
+}
+
+.Top2, .Bottom2{
+	width: 100%;
+	height: 16px;		/*~10%*/
+}
+
+.Top2{
+	margin-bottom: 5px;
+}
+
+.Middle2{
+	width: 16px;
+	height: 108px;		/*Remaining space*/
+	left: 52px;
+	top: 21px;
+}
+
+.Bottom2{
+	bottom: 0;
+	margin-top: 5px;
+}
+
+.Left2{
+	width: 20px;
+	height: 150px;
+	transform: skewX(18deg);
+	transform-origin: left top;
+	border-right: 5px solid #6f6c6c;
+	z-index: 1;
+}
+
+.Right2{
+	width: 20px;
+	height: 150px;
+	transform: skewX(-18deg);
+	transform-origin: right top;
+	right: 0;
+}
+
+/*****************************Logo #3*****************************/
+.Top3, .Bottom3{
+	float: left;
+	height: 20%;
+}
+
+.Top3{
+	top: 0;
+}
+
+.Bottom3{
+	bottom: 0;
+}
+
+.iLeft3, .iRight3{
+	width: 35%;
+}
+
+.iLeft3{
+	border-radius: 5px 0 0 5px;
+}
+
+.iRight3{
+	border-radius: 0 5px 5px 0;
+}
+
+.iMiddle3{
+	width: 30%;
+}
+
+#middle3{
+	height: 60%;
+	margin: auto;
+
+	clear: both;
+}
+
+.vTop, .vBottom{
+	height: 20%;
+	float: left;
+}
+
+.vTop{
+	width: 20%;
+}
+
+.buffer{
+	width: 100%;
+	height: 60%;
+	background-color: transparent;
+	clear: both;
+}
+
+.vMiddleOutter{
+	width: 20%;
+	height: 0;
+	border-top: 90px solid #ffffff;			/*60%*/
+	border-right: 24px solid transparent;
+	border-left: 24px solid transparent;
+	background-color: transparent;
+	/*margin: auto;*/
+	position: absolute;
+	left: 24px;
+}
+
+.vMiddleInner{
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 60px solid #6f6c6c;
+	background-color: transparent;
+	/*margin: auto;*/
+	z-index: 2;
+	position: absolute;
+	left: 40%;
+}
+
+.vBottom{
+	bottom: 0;
+}
+
+.vBottomLeft, .vBottomRight{
+	width: 40%;
+}
+.vBottomLeft, .vTopLeftOutter{
+	border-radius: 5px 0 0 5px;
+}
+
+.vBottomMiddle{
+	width: 20%;
+}
+
+.vBottomRight, .vTopRightOutter{
+	border-radius: 0 5px 5px 0;
+}
+
+.vLeft3, .vRight3{
+	width: 20%;
+	height: 60%;
+	border-radius: 5px;
+	clear: both;
+	transform-origin: 100% 0%;
+}
+
+.vLeft3{
+	transform: skewX(15deg);
+}
+
+.vRight3{
+	transform: skewX(-15deg);
+}
+
+/*****************************Logo #4*****************************/
+.Top4, .Bottom4{
+	float: left;
+	height: 20%;
+}
+
+.Top4{
+	top: 0;
+}
+
+.Bottom4{
+	bottom: 0;
+}
+
+.iLeft4, .iRight4{
+	width: 19.2%;
+}
+
+.iLeft4{
+	border-radius: 5px 0 0 5px;
+}
+
+.iRight4{
+	border-radius: 0 5px 5px 0;
+}
+
+.iTopRight4{
+	width: 25%;
+}
+
+.iMiddle4{
+	width: 14.4%;
+}
+
+#middle4{
+	height: 60%;
+	left: 19.2%;
+
+	clear: both;
+}
+
+.vLeft4, .vRight4{
+	width: 14.4%;
+	height: 100%;
+	border-radius: 5px;
+	transform-origin: 100% 0%;
+}
+
+.vLeft4{
+	transform: skewX(15deg);
+	position: absolute;
+	left: 52%;
+}
+
+.vRight4{
+	transform: skewX(-15deg);
+	position: absolute;
+	right: 0;
+}
+
+/*****************************Logo #5*****************************/
+.logo2{
+	position: relative;
+	width: 250px;
+	height: 240px;
+}
+
+.TopBar, .BottomBar{
+	width: 100%;
+	height: 15%;
+	/*border-radius: 5px;*/
+}
+
+.middle5{
+	width: 100%;
+	height: 70%;
+	background-color: transparent;
+}
+
+.i5{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 10%;
+	left: 15%;
+	/*margin-top: 9px;*/			/*6%*/
+	/*margin-bottom: 9px;*/		/*6%*/
+}
+
+.vLeft5{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 10%;
+	right: 45%;
+	transform: skewX(15deg) translateX(5px);
+	transform-origin: left top;
+	border-right: 5px solid #6f6c6c;
+	z-index: 2;
+}
+
+.vRight5{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 10%;
+	right: 15%;
+	transform: skewX(-15deg);
+	transform-origin: right top;
+}
+
+/*****************************Logo #6*****************************/
+.logo3{
+	position: relative;
+	width: 250px;
+	height: 240px;
+}
+
+.TopBar6, .BottomBar6{
+	width: 100%;
+	height: 15%;
+	/*border-radius: 5px;*/
+}
+
+.middle6{
+	width: 100%;
+	height: 70%;
+	background-color: transparent;
+}
+
+.i6{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 10%;
+	left: 15%;
+	/*margin-top: 9px;*/			/*6%*/
+	/*margin-bottom: 9px;*/		/*6%*/
+}
+
+.vLeft6{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 10%;
+	right: 45%;
+	transform: skewX(15deg);
+	transform-origin: left top;
+	z-index: 2;
+}
+
+.vRight6{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 10%;
+	right: 15%;
+	transform: skewX(-15deg);
+	transform-origin: right top;
+}
+
+/*****************************Logo #7*****************************/
+.logo4{
+	position: relative;
+	width: 250px;
+	height: 200px;
+}
+
+.TopBar7, .BottomBar7{
+	width: 100%;
+	height: 20%;
+	/*border-radius: 5px;*/
+}
+
+.middle7{
+	width: 100%;
+	height: 60%;
+	background-color: transparent;
+}
+
+.i7{
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	left: 15%;
+	/*margin-top: 9px;*/			/*6%*/
+	/*margin-bottom: 9px;*/		/*6%*/
+}
+
+.vLeft7{
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	right: 45%;
+	transform: skewX(15deg);
+	transform-origin: left top;
+	z-index: 2;
+}
+
+.vRight7{
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	right: 15%;
+	transform: skewX(-15deg);
+	transform-origin: right top;
+}
+
+/*****************************Logo #7*****************************/
+.logo4{
+	position: relative;
+	width: 250px;
+	height: 168px;
+}
+
+.middle9{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+
+.i9{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 0;
+	left: 25%;
+	/*margin-top: 9px;*/			/*6%*/
+	/*margin-bottom: 9px;*/		/*6%*/
+}
+
+.vLeft9{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 0;
+	right: 45%;
+	transform: skewX(15deg);
+	transform-origin: left top;
+	z-index: 2;
+}
+
+.vRight9{
+	position: absolute;
+	width: 15%;
+	height: 80%;
+	top: 0;
+	right: 15%;
+	transform: skewX(-15deg);
+	transform-origin: right top;
+}

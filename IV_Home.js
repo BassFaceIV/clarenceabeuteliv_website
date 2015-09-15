@@ -1,11 +1,20 @@
 $(document).ready(function(){
 
-	$('.navMenu > li').click(function(){
-		if($(this).children('ul').css('visibility') === 'hidden'){
-			$(this).children('ul').css('visibility', 'visible');
+	$('.navDropdownMenuLabel').click(function(e){
+		e.stopPropagation();
+		for(i = 1; i < 6; i++){
+			if($(this).siblings('div').attr('id') !== ('navDropdownMenu' + i)){
+				$('#navDropdownMenu' + i).slideUp(200);
+			}
+			else{
+				$(this).siblings('div').slideToggle(200);
+			}
 		}
-		else{
-			$(this).children('ul').css('visibility', 'hidden')
+	});
+
+	$('html').click(function(){
+		for(i = 1; i < 6; i++){
+			$('#navDropdownMenu' + i).slideUp(200);
 		}
 	});
 });

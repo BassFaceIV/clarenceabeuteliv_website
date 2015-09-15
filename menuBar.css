@@ -1,0 +1,101 @@
+.headerBar{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	background-color: #202020;
+	z-index: 2;
+}
+
+.headerBarWrapper{
+	width: 90%;
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.headerBarTop{
+	display: inline-block;
+}
+
+.headerBarBrand{
+	/*padding: 16px 0 16px 0;*/
+	line-height: 48px;
+	float: left;
+}
+
+#Brand{
+	vertical-align: middle;
+	font-size: 18px;
+}
+
+.navMenuWrapper{
+	width: auto;
+	height: auto;
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+.navMenu{
+	height: 100%
+	overflow: visible;
+	list-style: none;
+}
+
+.navMenuDropdown{
+	padding: 0 30px 0 30px;
+	position: relative;
+	float: left;
+	line-height: 50px;
+}
+
+.navDropdownMenuLabel{
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.navDropdownMenuLabel:hover{
+	cursor: pointer;
+	color: #6a6a6a;
+}
+
+/*
+.navMenuDropdown:hover{
+	cursor: pointer;
+	background-color: #6a6a6a;
+}
+*/
+
+.navDropdownMenuContent{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	display: none;
+	background-color: #303030;
+}
+
+.active{
+	display: block;
+}
+
+.navDropdownMenuItems{
+	text-align: left;
+}
+
+.navDropdownMenuItems > li{
+	padding: 0 30px 0 30px;
+}
+
+.navDropdownMenuItems > li:hover{
+	background-color: #202020;
+	cursor: pointer;
+}
+
+.subMenuLabel:hover{
+	color: #ffffff;
+}
+
+.navDropdownMenuLabel:after{
+	content: " \2304";
+}
